@@ -1,0 +1,90 @@
+
+* {background-color: #87D4C7; 
+	font-family: "Titillium Web";} 
+} /* 0*/
+
+.wrapper {width: 100%;
+			margin-right: auto;
+			margin-left: auto;
+		  }
+		  /* 10 */ 
+
+h1 {font-family: 'Poiret One';
+	font-weight: bold; 
+	font-size: 50px;
+	/* 10 */	
+}
+
+h2 {font-family: "Poiret One";
+	margin: 0;
+	padding: 0px;
+} /* 10 */
+
+#navbar {clear:both;
+	/*float: left*/
+	bottom: 30px;
+}
+
+.main ul li {list-style-type: none; 
+	   padding: 0px 0px 10px 10px;
+	   margin: 0px; 
+	   list-style: none;
+}
+
+#navbar ul {padding-left: 15%;
+		   clear: both;}
+		   /* 110*/
+
+#navbar ul li {display: inline;
+		padding: 10px 10px 10px 0px;
+	} /* 100 */
+
+
+header {float: left;
+		}
+		/* 10 */ 
+
+a {text-decoration: none;
+   font-family: "Titillium Web";
+	color: #5B49A3;}
+	/* 1 */
+
+a:visited {color: #838091;}
+/* 2 */
+
+
+.main {width: 70%;
+	   padding-left: 14%;
+	   clear: both;
+	}
+
+.content {clear:both;
+		padding: 0px;
+}
+
+.aboutmain {width: 70%;
+			margin: 0 auto;
+			float:left;
+			clear:both;
+			top:30px;
+			padding-left: 15%;
+			}
+
+.left {float:left;
+		width: 50%;
+		display:inline;
+		padding: 0;
+		margin: 0;
+		}
+
+.right{position:relative ;
+		float:left;
+		width: 50%;
+		display:inline;
+		left: 20px;}
+
+.right img{width: 100%;}
+
+header.clear {clear:both;
+			  }
+header {padding-left: 15%;}
