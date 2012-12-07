@@ -67,7 +67,7 @@ body, html {
 	   		background-origin: content-box; */
 	   		min-height: 100%;
 	   		position: relative;
-	   		min-width: 900px;
+	   		min-width: 1000px;
 	   		/*padding: 0;
 	   		margin: 0;*/
 }
@@ -75,15 +75,17 @@ body, html {
 
 
 
-h1 {font-family: "abril-fatface"; /*'gesta', sans-serif */
-	font-weight: bold; 
+h1 {font-family: "Acta Display"; 
+	font-weight: 900;
 	font-size: 60px;
 	padding: 0px;
 	margin: 0;
 		
 }
 
-h2 {font-family: "abril-fatface"; /*'gesta', sans-serif;*/
+h2 {font-family: "Acta Display"; 
+	font-weight: 900;
+	font-style: italic;
 	margin: 0;
 	padding: 0px;
 } 
@@ -127,7 +129,8 @@ header {float: left;
 .navbar a {
 		color:#94A2A5;
 		display: inline;
-		font-family: "gesta", sans-serif;
+		font-family: "FF Enzo Web"; 
+		font-weight: 300;
 		text-transform: uppercase;
 		padding: 0px 0px;
 		line-height: 75px;
@@ -162,15 +165,39 @@ header {float: left;
 
 .navbar a:hover {
 	/*color:#EBD4B2;*/
-	-webkit-box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.5);
-	-moz-box-shadow:    1px 1px 1px rgba(50, 50, 50, 0.5);
-	box-shadow:         1px 1px 1px rgba(50, 50, 50, 0.5);
+/*	-webkit-text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.5);
+	-moz-text-shadow:    1px 1px 1px rgba(50, 50, 50, 0.5);
+	text-shadow:         1px 1px 1px rgba(50, 50, 50, 0.5);*/
+	-webkit-text-shadow: 1px 1px 1px rgba(225, 225, 225, 0.5);
+	-moz-text-shadow:    1px 1px 1px rgba(225, 225, 225, 0.5);
+	text-shadow:         1px 1px 1px rgba(225, 225, 225, 0.5);
 
 }
 
-.navlist {
+/*.navlist {
 	margin-left: auto;
 	margin-right: auto;
+}*/
+
+.navleft{
+	position:absolute;
+	margin-left: -204px;
+	margin-top: 61px;
+
+}
+
+.navbar img {
+	position: absolute;
+	margin-left: 141px;
+	margin-top: -7px;
+	width: 220px;
+}
+
+.navright {
+	position:absolute;
+	margin-left: 396px;
+	margin-top: 61px;
+
 }
 
 /******************************************Links********************** */
@@ -195,13 +222,8 @@ a:hover {
 
 .main {width: 70%;
 	   padding-left: 14%;
-	   /*display: run-in;
-	   overflow: visible;*/
 	   clear: both;
-	   height: 400px;
-	   background: url('bonsai.jpg') no-repeat;
-	   background-height: 100%;
-	   background-width: 100%;   
+	   height: 400px;  
 }
 
 /********************************* Body Styles ***************************************/
@@ -212,7 +234,6 @@ a:hover {
 	margin: 0px; 
 	list-style: none;
 	font-family: "gesta", sans-serif;
-/*background-image: url("retro_intro.png");*/
 	} 
 
 	
@@ -220,13 +241,14 @@ a:hover {
 	clear:both;
 	padding-left: 10px;
 	padding-bottom: 10px;
-	width: 700px;
+	width: 898px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 20px;
-	border: 2px dashed black;
-	height: 400px;	/*Change this to make the divs the same on each page regardless of content height */
-	font-family: "gesta";
+	margin-top: 148px;
+	border-top: 1px dotted white;
+	height: 500px;	/*Change this to make the divs the same on each page regardless of content height */
+	font-family: "FF Enzo Web";
+	font-weight: 300;
 	}
 
 .content iframe {
@@ -255,12 +277,12 @@ a:hover {
 
 /********************************** CONTACT **************************************/
 form {
-	background: white;
+	/*background: white;*/
 	vertical-align: middle;
 	width: 300px;
 	margin-right: auto;
-	margin-left:auto;
-	display:absolute;
+	margin-left: auto;
+	display: absolute;
 	font-family: sans-serif;
 }
 
@@ -268,7 +290,7 @@ fieldset {
 	width: 420px;
 	margin-right: auto;
 	margin-left: auto;
-	border: 1px solid black;
+	border: 1px dotted white;
 	padding: 20px;
 	font-family: sans-serif;
 	font-size: 12px;
@@ -282,6 +304,7 @@ input {
 	border-radius: 3px;
 	padding: 5px;
 	margin: 5px;
+	display: block;
 
 }
 
@@ -295,17 +318,99 @@ label {
 	padding-right: 0;
 	font-style: bold;
 	display: block;
+	font-size: 12px;
+}
+
+legend {
+	font-size: 14px;
+	font-family: gesta;
+
 }
 
 #submit { 
 	padding: 10px;
 	font-size: 14px;
 	font-style: bold;
-	display:block;
+	display: block;
 	float: right;
-	background: gradient(linear, top, white, gray);
-
+	background: #F19393;
+	color: white;
 }
+
+#submit:hover {	
+	-webkit-box-shadow: 1px 1px 1px rgba(50, 50, 50, 0.5);
+	-moz-box-shadow:    1px 1px 1px rgba(50, 50, 50, 0.5);
+	box-shadow:         1px 1px 1px rgba(50, 50, 50, 0.5);
+}
+
+
+/********************************** WORK ************************************/
+
+table {
+	margin-top: 20px;
+}
+
+
+
+
+caption {
+	font-family: "Acta Display";
+	font-weight: 700;
+	font-size: 22px;
+	padding: 5px;
+	position: absolute;
+	margin-left: 206px;
+	margin-top: -45px;
+	background: #9e9987;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+thead {
+	font-family: "FF-Enzo-Web";
+	font-weight: 300;
+	font-size: 25px;
+	margin-left: 276px;
+	position: absolute;
+	margin-bottom: 10px;
+}
+
+tbody {
+	text-align: center;
+	margin-left: 200px;
+	margin-right: auto;
+	position: absolute;
+	margin-top: 22px;
+	width: 200px;
+	padding: 40px 50px 40px 50px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#9e9987));
+}
+
+tr {
+	font-family: "FF-Enzo-Web";
+	font-weight: ; 
+	font-size: 16px;
+}
+
+td {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom: 1px solid gray;
+}
+
+.ingredient {
+	text-align: right;
+	padding-right: 25px;
+}
+
+.qty {
+	text-align: left;
+}
+
+
+
+
+
 /* ---------------------FOOTER --------------------------------*/ 
 
 .footer {
@@ -318,14 +423,17 @@ label {
 		font-size: 12px;
 		right: 20px;
 		border-top: 1px solid #EBEBF0;
-		
+	/*	background: #5e5f63;
+		opacity: 10%;	*/
 }
 
 .footer p {
 	padding: 0 0 0 20px;
-	font-family: "gesta", sans-serif;
+	font-family: "FF-Enzo-Web";
+	font-weight: 100;
+	color: #5e5f63;
 	line-height: 40px;
 	vertical-align: middle;
-	text-transform: uppercase;
+
 }
 
