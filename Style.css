@@ -88,6 +88,7 @@ table {
 @font-face {
     font-family: 'duke_regularregular';
     src: url('duke-webfont.eot');
+    src: local('duke-webfont.svg');
     src: url('duke-webfont.eot?#iefix') format('embedded-opentype'),
          url('duke-webfont.woff') format('woff'),
          url('duke-webfont.ttf') format('truetype'),
@@ -133,6 +134,7 @@ table {
 @font-face {
     font-family: 'sullivanregular';
     src: url('sullivan-regular-webfont.eot');
+    src: local('Sullivan-Regular.otf');
     src: url('sullivan-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('sullivan-regular-webfont.woff') format('woff'),
          url('sullivan-regular-webfont.ttf') format('truetype'),
@@ -171,11 +173,12 @@ body, html {
 
 
 
-h1 {font-family: "sullivanregular", sans-serif; 
-	font-weight: 900;
-	font-size: 45px;
-	padding: 0px;
+h1 {font-family: "sullivanregular"; 
+	font-weight: normal;
+	font-size: 152px;
+	padding: 0;
 	margin: 0;
+	line-height: 40px;
 		
 }
 
@@ -187,6 +190,16 @@ h2 {font-family: "Wire One";
 
 p {
 	font-family: "ABeeZee";
+	font-size: 15px;
+	line-height: 20px;
+	padding: 5px;
+}
+
+h3 {
+	font-family: "Lobster";
+	font-size: 35px;
+	margin-top: 5px;
+	margin-bottom: 10px;
 }
 
 /****************************navbar styles**********************************/
@@ -203,7 +216,7 @@ header {float: left;
 	margin-right: auto;
 	margin-left: auto;
 	width: 507px;
-	height: 75px;
+	height: 200px;
 	}
 
 .navbar ul {
@@ -340,18 +353,22 @@ a:hover {
 
 	
 .content {
-	clear:both;
-	padding-left: 10px;
-	padding-bottom: 10px;
-	width: 900px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: 148px;
+	display:block;
+	position:absolute;
+	width: 70%;
+	top: 215px;
+	margin-left: 215px;
+	margin-right: 30px;
 	border-top: 4px dotted white;
-	height: 500px;	/*Change this to make the divs the same on each page regardless of content height */
+	height: 100%;	/*Change this to make the divs the same on each page regardless of content height */
 	font-family: "ABeeZee";
 	font-weight: 300;
+	float:right;
 	}
+
+/*.index_content {
+	width: 70%;
+}*/
 
 .content iframe {
 	margin-left: auto;
@@ -445,11 +462,16 @@ legend {
 	box-shadow:         1px 1px 1px rgba(50, 50, 50, 0.5);
 }
 
+#post_submit {
+	text-align: center;
+	display: none;
+}
 
 /********************************** WORK ************************************/
 
 table {
 	margin-top: 20px;
+	float:left;
 }
 
 
@@ -509,8 +531,27 @@ td {
 	text-align: left;
 }
 
+.horizontal {
+		transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	   -moz-transform:rotate(-90deg);
+	     -o-transform:rotate(-90deg);
+	    -ms-transform:rotate(-90deg);
+	    margin-top: 160px;
+	    margin-left: -35px;
+	    width: 30%;
+	    clear: both;
 
+}
 
+/*.horizontal h1 {
+		transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	   -moz-transform:rotate(-90deg);
+	     -o-transform:rotate(-90deg);
+	    -ms-transform:rotate(-90deg);
+}
+*/
 
 
 /* ---------------------FOOTER --------------------------------*/ 
