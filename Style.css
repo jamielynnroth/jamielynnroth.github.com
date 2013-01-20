@@ -171,7 +171,7 @@ body, html {
 
 
 
-h1 {font-family: "sullivanregular"; 
+h1 {font-family: "sullivanregular", sans-serif; 
 	font-weight: 900;
 	font-size: 45px;
 	padding: 0px;
@@ -224,9 +224,15 @@ header {float: left;
 		position: relative;
 	}
 
+.current {
+	color: #8BF0CB; /* #F19393;*/
+	line-height: 30px;
+	text-decoration:  underline ; 
+}
+
 
 .navbar a {
-		color:#94A2A5;
+		color: #FF756C; /*color:#94A2A5;*/
 		display: inline;
 		font-family: "Wire One"; 
 		font-weight: 300;
@@ -258,9 +264,6 @@ header {float: left;
 
 
 
-.navbar a:visited {
-	color: #F19393;
-}
 
 .navbar a:hover {
 	/*color:#EBD4B2;*/
@@ -302,17 +305,17 @@ header {float: left;
 /******************************************Links********************** */
 a {
 	text-decoration: none;
-	color: #555766;
+	/*color: #555766;*/
 }
-	
+/*	
 a:visited {
 	color: #F19393;
-}
+}*/
 
-a:active {
+/*a:active {
 	color: #F19393;
 }
-
+*/
 a:hover {
 	/*color:#EBD4B2;*/
 }
@@ -432,8 +435,8 @@ legend {
 	font-style: bold;
 	display: block;
 	float: right;
-	background: #F19393;
-	color: white;
+	background: #8BF0CB;;
+	color: black;
 }
 
 #submit:hover {	
